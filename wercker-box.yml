@@ -1,4 +1,4 @@
-name: php55
+name: php55-trusty
 version: 0.1.0
 inherits: leipert/ubuntu14.04-webessentials@2.0.0
 type: main
@@ -7,6 +7,8 @@ description: wercker trusty box for php 5.5
 keywords:
   - php
   - php5
+  - trusty
+  - 14.04
 packages:
   - php@5.5
   - npm
