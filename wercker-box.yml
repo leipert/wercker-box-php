@@ -1,5 +1,5 @@
 name: php55-trusty
-version: 0.1.0
+version: 0.1.1
 inherits: leipert/ubuntu14.04-webessentials@2.0.0
 type: main
 platform: ubuntu@14.04
@@ -31,6 +31,8 @@ script: |
   # Configure PHP
   sudo sed -i 's/128M/8096M/' /etc/php5/cli/php.ini
   sudo sed -i 's/disable_functions/;disable_functions/' /etc/php5/cli/php.ini
+
+  sudo cp inis/zzzz.ini /etc/php5/cli/conf.d/
 
   # Configure PEAR
   pear config-set php_ini /etc/php5/cli/php.ini
